@@ -35,6 +35,8 @@ RUN     yum -y install \
     && echo 'echo Power Status:' >> ~/.bashrc \
     && echo '/megacli/check_ipmi_sensor.pl -T 'Power_Supply'' >> ~/.bashrc
 
+LABEL org.opencontainers.image.source="https://github.com/bezha/docker_megacli_on_ghcr.io"
+
 
 COPY resources/scripts /megacli
 COPY resources/scripts2 /megacli/scripts
