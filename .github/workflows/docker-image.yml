@@ -18,4 +18,4 @@ jobs:
           username: "bezha"
           password: ${{ secrets.CR_PAT }}
           repository: bezha/docker_megacli_on_ghcr.io
-          tags: latest
+          tags: v1
